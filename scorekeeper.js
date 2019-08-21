@@ -34,3 +34,16 @@ p2Btn.addEventListener('click', function(){
     }
     p2ScoreDisplay.textContent = p2Score;
 });
+
+
+resetBtn.addEventListener('click', function(){
+    reset();
+ });
+
+ numInput.addEventListener('change', function(){
+    winningScoreDisplay.textContent = this.value;
+    winningScore = Number(this.value);
+    reset();
+});
+
+ 
