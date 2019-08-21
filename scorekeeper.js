@@ -40,6 +40,18 @@ resetBtn.addEventListener('click', function(){
     reset();
  });
 
+
+ function reset(){
+    p1Score = 0;
+    p2Score = 0;
+    p1ScoreDisplay.textContent = 0;
+    p2ScoreDisplay.textContent = 0;
+
+    p1ScoreDisplay.classList.remove('winner');
+    p2ScoreDisplay.classList.remove('winner');
+    gameOver = false;
+}
+
  numInput.addEventListener('change', function(){
     winningScoreDisplay.textContent = this.value;
     winningScore = Number(this.value);
